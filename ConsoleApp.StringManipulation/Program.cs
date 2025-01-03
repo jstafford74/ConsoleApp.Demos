@@ -1,7 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-using System.Runtime.CompilerServices;
-using System.Runtime.Intrinsics.Arm;
-
 Console.WriteLine("********** - String Manipulation - **********");
 
 // Initialize with string literal
@@ -53,7 +50,7 @@ s1 += s2;
 
 string newString = $"{s1} {s2} more characters";
 string newString1 = s1 + s2 + "more characters";
-string newString2 = String.Format("Litera; string {0} {1}",s1,s2);
+string newString2 = String.Format("Litera; string {0} {1}", s1, s2);
 Console.WriteLine($"{nameof(newString)}: {newString}");
 Console.WriteLine($"{nameof(newString1)}: {newString1}");
 Console.WriteLine($"{nameof(newString2)}: {newString2}");
@@ -62,7 +59,7 @@ Console.WriteLine($"{nameof(newString2)}: {newString2}");
 
 // Null or empty checks
 // find the length of a string
-if(string.IsNullOrEmpty(s4))
+if (string.IsNullOrEmpty(s4))
 {
     Console.WriteLine($"{nameof(s4)} is null or empty");
 }
@@ -73,7 +70,7 @@ else
 
 if (!string.IsNullOrEmpty(s5))
 {
-    Console.WriteLine($"Length of {nameof(s5)}: {s5.Length}");  
+    Console.WriteLine($"Length of {nameof(s5)}: {s5.Length}");
 }
 else
 {
@@ -112,4 +109,4 @@ string chosenString = chosen.ToString();
 
 // Change formatting
 Console.WriteLine($"{nameof(salary)}: {value:C}");
-Console.WriteLine(nameof(salary) +" :" + value.ToString("C"));
+Console.WriteLine(nameof(salary) + " :" + value.ToString("C"));

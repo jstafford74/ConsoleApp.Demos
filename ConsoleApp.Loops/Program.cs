@@ -22,15 +22,15 @@ while (counter < times)
 int sum = 0;
 int num = 0;
 
-while(num != -1)
+while (num != -1)
 {
     Console.Write("Please enter number to be summed up. (-1 to stop or exit): ");
     num = Convert.ToInt32(Console.ReadLine());
-    if(num!= -1)
+    if (num != -1)
     {
         sum += num;
     }
-   
+
 }
 Console.WriteLine($"The sum of the numbers entered is {sum}");
 Console.WriteLine("*****************End While Loop*********************");

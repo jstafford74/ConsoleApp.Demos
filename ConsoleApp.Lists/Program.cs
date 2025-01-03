@@ -29,7 +29,7 @@ do
     {
         grades.Add(grade);
     }
-    
+
     Console.Write("Do you wish to continue (1 = yes | 2 = no)? ");
     @continue = Convert.ToInt32(Console.ReadLine());
 

@@ -12,7 +12,7 @@ while (choice != -1)
     {
         // Show calculator options / Show menu
         PrintMenu();
-      
+
         choice = Convert.ToInt32(Console.ReadLine());
 
         if (choice == -1)
@@ -33,7 +33,7 @@ while (choice != -1)
     }
     catch (DivideByZeroException)
     {
-        Console.WriteLine("Cannot divide by zero");  
+        Console.WriteLine("Cannot divide by zero");
         continue;
     }
     catch (Exception ex)

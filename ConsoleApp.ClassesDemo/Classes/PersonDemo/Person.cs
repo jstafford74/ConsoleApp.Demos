@@ -2,18 +2,12 @@
 // Define a class
 using System.Security.Cryptography;
 
-public class Person
+namespace ConsoleApp.ClassesDemo.Classes.PersonDemo;
+public partial class Person
 {
-    public Person() 
-    { 
-            
-    }
-
-    public Person(string firstName, string lastName, DateOnly dob)
+    public Person()
     {
-        FirstName = firstName;
-        LastName = lastName;
-        DateOfBirth = dob;
+
     }
 
     public Person(string firstName, string lastName, string taxNumber)
@@ -23,8 +17,8 @@ public class Person
         _taxNumber = taxNumber;
     }
     // Properties/Data Members
-    public string FirstName { get; set; }
-    public string LastName { get; set; }
+    public required string FirstName { get; set; }
+    public required string LastName { get; set; }
     public DateOnly DateOfBirth { get; set; }
 
     // Field member
@@ -52,7 +46,8 @@ public class Person
         if (string.IsNullOrEmpty(_taxNumber))
         {
             _taxNumber = GetRandomNumber();
-        } else
+        }
+        else
         {
             Console.WriteLine("Tax number already exists.");
         }
@@ -68,15 +63,6 @@ public class Person
         return _idNumber;
     }
 
-    public int GetAge()
-    {
-        return DateTime.Now.Year - DateOfBirth.Year;
-    }
-
-    public int GetAge(int year)
-    {
-        return year - DateOfBirth.Year;
-    }
 
     protected string GetRandomNumber()
     {
@@ -85,3 +71,4 @@ public class Person
                  .ToString();
     }
 }
+

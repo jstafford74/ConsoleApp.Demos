@@ -1,4 +1,4 @@
-﻿namespace ConsoleApp.ClassesDemo
+﻿namespace ConsoleApp.ClassesDemo.Interfaces
 {
     public interface ICircularShape
     {

@@ -13,7 +13,7 @@ string[] students = new string[numberOfStudents];
 for (int i = 0; i < numberOfStudents; i++)
 {
     Console.Write("Enter the students name: ");
-    students[i] =Console.ReadLine();
+    students[i] = Console.ReadLine();
 
     Console.Write("Enter grade: ");
     grades[i] = Convert.ToInt32(Console.ReadLine());

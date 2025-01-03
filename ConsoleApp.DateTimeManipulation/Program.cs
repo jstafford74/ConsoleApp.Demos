@@ -9,7 +9,7 @@ DateTime date = new DateTime();
 // Create a DateTime from a specific date
 var dateOfBirth = new DateTime(1974, 07, 01);
 Console.WriteLine($"{nameof(dateOfBirth)}: {dateOfBirth}");
-var exactDateOfBirth = new DateTime(1974, 07, 01, 12, 30, 45,DateTimeKind.Local);
+var exactDateOfBirth = new DateTime(1974, 07, 01, 12, 30, 45, DateTimeKind.Local);
 Console.WriteLine($"{nameof(exactDateOfBirth)}: {exactDateOfBirth}");
 Console.WriteLine($"Day of the week: {dateOfBirth.DayOfWeek}");
 Console.WriteLine($"Day of the year: {dateOfBirth.DayOfYear}");
@@ -86,7 +86,7 @@ Console.WriteLine($"{nameof(decadeLater)}: {decadeLater}");
 Console.WriteLine($"{nameof(lastMonth)}: {lastMonth}");
 
 var DateOnlyFromDateTime = DateOnly.FromDateTime(now);
- Console.WriteLine($"{nameof(DateOnlyFromDateTime)}: {DateOnlyFromDateTime}");
+Console.WriteLine($"{nameof(DateOnlyFromDateTime)}: {DateOnlyFromDateTime}");
 
 
 Console.WriteLine("What is your DOB (dd MMM yyyy)?");
